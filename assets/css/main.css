@@ -666,40 +666,85 @@ section {
     color: #007aff;
 }
 
-.contact-form {
+.contact-cta {
     background: white;
-    padding: 2rem;
+    padding: 2.5rem;
     border-radius: 16px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     border: 1px solid #e5e5e7;
+    text-align: center;
 }
 
-.form-group {
-    margin-bottom: 1.5rem;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 0.5rem;
+.contact-cta h3 {
     color: #1d1d1f;
-    font-weight: 500;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 1rem;
-    border: 2px solid #e5e5e7;
-    border-radius: 8px;
+.contact-cta p {
+    color: #6e6e73;
+    margin-bottom: 2rem;
+    line-height: 1.6;
     font-size: 1rem;
-    transition: border-color 0.3s ease;
-    font-family: inherit;
 }
 
-.form-group input:focus,
-.form-group textarea:focus {
-    outline: none;
-    border-color: #007aff;
+.contact-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-buttons .button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    min-width: 180px;
+    justify-content: center;
+}
+
+.contact-buttons .button.primary {
+    background: #007aff;
+    color: white;
+    border: 2px solid #007aff;
+}
+
+.contact-buttons .button.primary:hover {
+    background: #0056b3;
+    border-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 122, 255, 0.3);
+}
+
+.contact-buttons .button.secondary {
+    background: white;
+    color: #007aff;
+    border: 2px solid #007aff;
+}
+
+.contact-buttons .button.secondary:hover {
+    background: #007aff;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 122, 255, 0.2);
+}
+
+@media (max-width: 768px) {
+    .contact-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contact-buttons .button {
+        width: 100%;
+        max-width: 300px;
+    }
 }
 
 /* Footer */
