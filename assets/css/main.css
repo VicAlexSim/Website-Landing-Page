@@ -862,15 +862,25 @@ section {
         flex-direction: column;
         text-align: center;
         gap: 2rem;
+        align-items: center;
+        justify-content: center;
     }
     
     .hero-image {
         order: 1; /* Image first */
         margin-bottom: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     
     .hero-text {
         order: 2; /* Text second */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
     }
     
     .profile-image {
@@ -886,6 +896,11 @@ section {
         margin-top: 3rem;
         margin-bottom: 2rem;
         order: 3; /* Move below everything */
+        text-align: center;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     
     .hero-text h1 {
@@ -899,6 +914,10 @@ section {
     .hero-actions {
         justify-content: center;
         flex-wrap: wrap;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        width: 100%;
     }
     
     .about-content {
