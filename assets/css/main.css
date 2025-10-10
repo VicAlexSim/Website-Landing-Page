@@ -893,8 +893,12 @@ section {
     }
     
     .hero {
-        padding-top: 100px; /* Add more padding to account for fixed header */
+        padding-top: 120px; /* Add even more padding to account for fixed header */
         padding-bottom: 60px; /* Add bottom padding for scroll indicator */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
     
     .hero-content {
@@ -905,6 +909,7 @@ section {
         align-items: center;
         justify-content: center;
         width: 100%;
+        order: 1;
     }
     
     .hero-image {
@@ -929,13 +934,14 @@ section {
         bottom: auto;
         left: auto;
         transform: none;
-        margin-top: 2rem;
+        margin-top: 3rem;
         text-align: center;
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        order: 4; /* Ensure it comes after everything */
     }
     
     .profile-image {
