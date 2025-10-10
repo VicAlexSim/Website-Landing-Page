@@ -2,7 +2,27 @@
 
 /* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-@import url(fontawesome-all.min.css);
+/* FontAwesome loaded via CDN in HTML */
+
+/* Icon Styles */
+.icon {
+    font-family: "Font Awesome 6 Free", "Font Awesome 6 Brands", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon.solid {
+    font-weight: 900;
+}
+
+.icon.brands {
+    font-weight: 400;
+}
 
 /* CSS Reset */
 *, *::before, *::after {
@@ -281,7 +301,15 @@ p {
 
 @media (min-width: 769px) {
     .scroll-indicator {
-        bottom: 3rem; /* Move further down on desktop */
+        position: absolute;
+        bottom: 2rem;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 0;
+    }
+    
+    .hero {
+        padding-bottom: 80px; /* Add space for scroll indicator */
     }
 }
 
@@ -865,7 +893,8 @@ section {
     }
     
     .hero {
-        padding-top: 80px; /* Add padding to account for fixed header */
+        padding-top: 100px; /* Add more padding to account for fixed header */
+        padding-bottom: 60px; /* Add bottom padding for scroll indicator */
     }
     
     .hero-content {
@@ -896,8 +925,17 @@ section {
     }
     
     .scroll-indicator {
-        order: 3; /* Scroll indicator last */
-        margin-top: 1rem;
+        position: relative;
+        bottom: auto;
+        left: auto;
+        transform: none;
+        margin-top: 2rem;
+        text-align: center;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
     
     .profile-image {
