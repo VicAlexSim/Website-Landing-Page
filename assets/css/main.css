@@ -279,6 +279,12 @@ p {
     z-index: 2;
 }
 
+@media (min-width: 769px) {
+    .scroll-indicator {
+        bottom: 3rem; /* Move further down on desktop */
+    }
+}
+
 .scroll-arrow {
     width: 2px;
     height: 30px;
@@ -856,6 +862,10 @@ section {
     
     .mobile-nav {
         display: block;
+    }
+    
+    .hero {
+        padding-top: 80px; /* Add padding to account for fixed header */
     }
     
     .hero-content {
