@@ -865,12 +865,12 @@ section {
     }
     
     .hero-image {
-        order: 1; /* Move image above text */
+        order: 1; /* Image first */
         margin-bottom: 1rem;
     }
     
     .hero-text {
-        order: 2; /* Move text below image */
+        order: 2; /* Text second */
     }
     
     .profile-image {
@@ -883,7 +883,8 @@ section {
         bottom: auto;
         left: auto;
         transform: none;
-        margin-top: 2rem;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
         order: 3; /* Move below everything */
     }
     
@@ -944,39 +945,58 @@ section {
         flex-direction: column;
         text-align: center;
         gap: 1rem;
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
     }
     
     .experience-image {
         order: 1;
         margin-bottom: 1rem;
+        flex-shrink: 0;
     }
     
     .experience-content {
         order: 2;
         text-align: center;
+        width: 100%;
+        overflow: hidden;
     }
     
     .experience-content h3 {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         margin-bottom: 0.5rem;
-    }
-    
-    .experience-content h4 {
-        font-size: 1rem;
-        margin-bottom: 0.5rem;
-    }
-    
-    .experience-content p {
-        font-size: 0.9rem;
-        line-height: 1.5;
         word-wrap: break-word;
         overflow-wrap: break-word;
         hyphens: auto;
     }
     
+    .experience-content h4 {
+        font-size: 0.95rem;
+        margin-bottom: 0.5rem;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        hyphens: auto;
+    }
+    
+    .experience-content p {
+        font-size: 0.85rem;
+        line-height: 1.4;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        hyphens: auto;
+        max-width: 100%;
+        overflow: hidden;
+    }
+    
     .experience-content .tech-tags {
         justify-content: center;
         flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+    
+    .experience-content .tech-tag {
+        font-size: 0.75rem;
+        padding: 0.25rem 0.5rem;
     }
 }
 
@@ -997,6 +1017,28 @@ section {
     .hero-actions {
         flex-direction: column;
         align-items: center;
+    }
+    
+    .profile-image {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .experience-content p {
+        font-size: 0.8rem;
+        line-height: 1.3;
+    }
+    
+    .experience-content h3 {
+        font-size: 1rem;
+    }
+    
+    .experience-content h4 {
+        font-size: 0.9rem;
+    }
+    
+    .container {
+        padding: 0 0.5rem;
     }
 }
 
