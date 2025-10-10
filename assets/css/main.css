@@ -245,15 +245,17 @@ p {
 }
 
 .button.secondary {
-    background: transparent;
-    color: #1d1d1f;
-    border: 2px solid #d2d2d7;
+    background: #1d1d1f;
+    color: white;
+    border: 2px solid #1d1d1f;
 }
 
 .button.secondary:hover {
-    background: #1d1d1f;
+    background: #333;
     color: white;
+    border-color: #333;
     transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(29, 29, 31, 0.3);
 }
 
 .button.tertiary {
@@ -763,16 +765,17 @@ section {
 }
 
 .contact-buttons .button.secondary {
-    background: white;
-    color: #007aff;
-    border: 2px solid #007aff;
+    background: #1d1d1f;
+    color: white;
+    border: 2px solid #1d1d1f;
 }
 
 .contact-buttons .button.secondary:hover {
-    background: #007aff;
+    background: #333;
     color: white;
+    border-color: #333;
     transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(0, 122, 255, 0.2);
+    box-shadow: 0 8px 25px rgba(29, 29, 31, 0.3);
 }
 
 @media (max-width: 768px) {
