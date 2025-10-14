@@ -1256,17 +1256,18 @@ section {
 .project-card.featured::before {
     content: 'Featured';
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 30px;
+    right: 25px;
     background: #007aff;
     color: white;
-    padding: 0.5rem 1.2rem;
+    padding: 0.6rem 1.3rem;
     border-radius: 25px;
     font-size: 0.85rem;
     font-weight: 600;
     z-index: 100;
     box-shadow: 0 4px 15px rgba(0, 122, 255, 0.4);
     white-space: nowrap;
+    line-height: 1;
 }
 
 .project-award {
